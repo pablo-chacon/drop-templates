@@ -21,7 +21,7 @@ The authors and contributors:
 
 **do not** guarantee correctness, uptime, safety, or suitability for any purpose
 
-All usage of this repository — including running the included infrastructure, deploying the protocol, or integrating DROP into any service — is performed entirely at the risk of the user.
+All usage of this repository, including running the included infrastructure, deploying the protocol, or integrating DROP into any service, is performed entirely at the risk of the user.
 
 This **software is offered strictly as-is**, without any warranties, express or implied.
 The **authors are not liable** for any damages, losses, claims, or other issues arising from the use, misuse, failure, or operation of this software or any derivative work.

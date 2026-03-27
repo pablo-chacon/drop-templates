@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 set -e
 
 echo "Deploying DROP Protocol to Anvil..."

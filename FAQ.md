@@ -199,7 +199,7 @@ Use **GitHub Discussions** in this repository for:
 * show and tell
 * multi-currency and CeFi setups
 
-The community and maintainers can respond there.
+The community can respond there.
 
 ---
 

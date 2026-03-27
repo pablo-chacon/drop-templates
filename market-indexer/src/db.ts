@@ -2,6 +2,7 @@ import { Pool } from "pg";
 
 export const pool = new Pool({ connectionString: process.env.PG_URL });
 
+
 export async function upsertSession(p: {
   storageId: bigint;
   dropper: string;
@@ -36,12 +37,14 @@ export async function upsertSession(p: {
   );
 }
 
+
 export async function removeSession(storageId: bigint) {
   await pool.query(
     `DELETE FROM sessions_open WHERE storage_id = $1`,
     [storageId.toString()]
   );
 }
+
 
 export async function listSessionsByRegion(region: string, limit = 50) {
   const res = await pool.query(

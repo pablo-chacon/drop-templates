@@ -1,5 +1,6 @@
 import { createPublicClient, webSocket, parseAbiItem } from "viem";
 
+
 const abiSessionCreated = parseAbiItem(
   "event SessionCreated(uint256 indexed storageId, uint256 indexed spaceId, address indexed dropper, address picker)"
 );
@@ -9,6 +10,7 @@ const abiDropped = parseAbiItem(
 const abiFinalized = parseAbiItem(
   "event Finalized(uint256 indexed storageId, address operator, bool byTimeout)"
 );
+
 
 export function startChainListener({
   onSessionCreated,
@@ -36,6 +38,7 @@ export function startChainListener({
     },
   });
 
+  
   const address = process.env.DROP_CORE as `0x${string}`;
 
   client.watchEvent({ address, event: abiSessionCreated }, (log) => {

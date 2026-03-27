@@ -1,6 +1,7 @@
 import { FastifyInstance } from "fastify";
 import { listSessionsByRegion } from "./db";
 
+
 export default async function routes(app: FastifyInstance) {
   app.get("/sessions", async (req, reply) => {
     const { region, limit } = req.query as any;

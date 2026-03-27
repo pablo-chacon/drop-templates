@@ -1,0 +1,31 @@
+version: "3.8"
+services:
+  anvil:
+    image: ghcr.io/foundry-rs/foundry:latest
+    command: anvil --host 0.0.0.0 --chain-id 31337 --block-time 1 --silent
+    ports: ["8545:8545"]
+
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: drop
+      POSTGRES_USER: drop
+      POSTGRES_PASSWORD: drop
+    ports: ["5432:5432"]
+    volumes:
+      - ./sql/init.sql:/docker-entrypoint-initdb.d/01_init.sql:ro
+
+  market-indexer:
+    build:
+      context: ./market-indexer
+      dockerfile: Dockerfile
+    environment:
+      RPC_URL: ws://anvil:8545
+      CHAIN_ID: "31337"
+      PG_URL: postgres://drop:drop@db:5432/drop
+      DROP_CORE: ${DROP_CORE}
+      PORT: "8081"
+    depends_on:
+      - anvil
+      - db
+    ports: ["8081:8081"]

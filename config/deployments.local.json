@@ -1,0 +1,6 @@
+{
+  "dropCore": "0x123...",
+  "dropRegistry": "0x456...",
+  "escrow": "0x789...",
+  "chainId": 31337
+}

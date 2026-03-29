@@ -53,10 +53,10 @@ All smart contracts live in the canonical on-chain repo:
 
 **Canonical DROP Protocol contract addresses (Ethereum mainnet)**:
 
-* **DROPCore:** TBD
-* **DROPSpaceRegistry:** TBD
-* **Escrow:** TBD
-* **protocolTreasury:** 0xcd89321D5a9080e417ac01c8F46F643548ad7C04
+* DROPCore:          0x924cC808389F0385dBe3F0248796147D85635338
+* DROPSpaceRegistry: 0xfbf7Ed40f0FA992D2Ddc07250FE2D0e72Cbd12c9
+* Escrow:            0x9e859D91C900F799F23F55FffCdAf389118a5766
+* protocolTreasury:  0xcd89321D5a9080e417ac01c8F46F643548ad7C04
 
 ---
 

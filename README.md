@@ -188,10 +188,10 @@ can be used with any DROP-compatible deployment.
 
 **Canonical Ethereum Mainnet (chainId: 1) Addresses**:
 
-* **DROPCore**: TBD
-* **DROPSpaceRegistry**: TBD
-* **Escrow**: TBD
-* **Protocol Treasury**: **0xcd89321D5a9080e417ac01c8F46F643548ad7C04**
+* DROPCore:          0x924cC808389F0385dBe3F0248796147D85635338
+* DROPSpaceRegistry: 0xfbf7Ed40f0FA992D2Ddc07250FE2D0e72Cbd12c9
+* Escrow:            0x9e859D91C900F799F23F55FffCdAf389118a5766
+* protocolTreasury:  0xcd89321D5a9080e417ac01c8F46F643548ad7C04
 
 These contracts are immutable and permissionless.
 Using these **addresses does not imply any** affiliation, approval,

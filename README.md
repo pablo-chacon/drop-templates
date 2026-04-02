@@ -1,5 +1,4 @@
 
-
 ---
 
 # **DROP Templates (Starter Kit for DROP Protocol Integrations)**
@@ -58,6 +57,8 @@ All smart contracts live in the canonical on-chain repo:
 * Escrow:            0x9e859D91C900F799F23F55FffCdAf389118a5766
 * protocolTreasury:  0xcd89321D5a9080e417ac01c8F46F643548ad7C04
 
+**The deployment is immutable and permissionless. No upgrades or governance actions are possible.**
+
 ---
 
 ## Suggested Platform Fee
@@ -92,6 +93,16 @@ The DROP Protocol author has no responsibility for, or control over, **anti-scam
 
 ---
 
+## Micro-logistics
+
+
+Decentralized Micro-logistics concept:
+
+
+[Micro-logistics](https://github.com/pablo-chacon/drop-protocol/blob/main/docs/micro-logistics.md)
+
+---
+
 ## Repository Structure
 
 ```
@@ -122,17 +133,6 @@ drop-templates/
 ├── README.md
 └── WHITEPAPER.md
 ```
-
----
-
-## On-chain Deployment
-
-DROP Protocol is deployed on Ethereum mainnet.
-
-DROPCore (ERC-721):
-TBD — address published after mainnet deploy.
-
-**The deployment is immutable and permissionless. No upgrades or governance actions are possible.**
 
 ---
 
